@@ -1,0 +1,25 @@
+{
+  "name": "neverend",
+  "version": "0.0.1",
+  "description": "Keep long-running node processes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": {
+    "name": "Mostly Serious",
+    "email": "info@mostlyserious.io"
+  },
+  "maintainers": [
+    {
+      "name": "devoidfury",
+      "email": "tom@mostlyserious.io"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "node-watch": "0.3.0",
+    "nomnom": "1.6.0"
+  }
+}
