@@ -7,16 +7,17 @@ This is a list of what the thing will do, not necessarily what it does currently
 
 ##Commands:
 
-####start
+####start \[script\]
 
 Start a script. Usage: `eternal start thing.js`
 
 #####Options
 
-* --exec **-e** _default: node_  - specifies an executable.
+_full, short, default_
+* --exec | -e = _node_  - **specify an executable.**
 Can be either absolute/relative path or a command found in $PATH
 
-* --max **-n** _default: 10_ - specify max number of restarts.
+* --max | -n = _10_ - **specify max number of restarts.**
 Set to -1 for infinite restarts
 
 #####Examples:
