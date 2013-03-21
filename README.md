@@ -1,18 +1,34 @@
-eternal
-=======
+#eternal
 
 run things to eternity. It shouldn't matter what those runnable things happen to be.
 
 This is a list of what the thing will do, not necessarily what it does currently.
 
-cli:
-====
 
-Start a thing:
---------------
+##Commands:
 
-eternal start thing.js
+####start
 
+Start a script. Usage: `eternal start thing.js`
+
+#####Options
+
+* --exec [-e] (Default: node)  - specifies an executable.
+Can be either absolute/relative path or a command found in $PATH
+
+* --max [-n] (Default: 10) - specify max number of restarts.
+Set to -1 for infinite restarts
+
+#####Examples:
+
+Start a node app:
+`eternal start thing.js`
+
+Start a ruby script:
+`eternal start script.rb -e ruby`
+
+
+#TODO:
 
 show the list of running things:
 --------------------------------
