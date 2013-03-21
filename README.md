@@ -13,10 +13,10 @@ Start a script. Usage: `eternal start thing.js`
 
 #####Options
 
-* --exec [-e] (Default: node)  - specifies an executable.
+* --exec **-e** _default: node_  - specifies an executable.
 Can be either absolute/relative path or a command found in $PATH
 
-* --max [-n] (Default: 10) - specify max number of restarts.
+* --max **-n** _default: 10_ - specify max number of restarts.
 Set to -1 for infinite restarts
 
 #####Examples:
