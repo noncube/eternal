@@ -1,5 +1,5 @@
 {
-  "name": "neverend",
+  "name": "eternal",
   "version": "0.0.1",
   "description": "Keep long-running node processes.",
   "main": "index.js",
