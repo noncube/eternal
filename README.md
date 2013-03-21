@@ -14,17 +14,17 @@ Start a script. Usage: `eternal start thing.js`
 #####Options
 
 **--exec, -e** - specify an executable.
-Can be either absolute/relative path or a command found in `$PATH`
-_Defaults to `node`_
+Can be either absolute/relative path or a command found in $PATH
+`Defaults to node`
 
 **--max, -n** - specify max number of restarts.
-Set to -1 for infinite restarts
-_Defaults to `10`_
+Set to 0 for infinite restarts
+`Defaults to 10`
 
 #####Examples:
 
-Start a node app:
-`eternal start thing.js`
+Start a node app that will restart forever:
+`eternal start app.js -n 0`
 
 Start a ruby script:
 `eternal start script.rb -e ruby`
