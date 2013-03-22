@@ -1,3 +1,5 @@
 
 
-console.log('-- TEST.js RUNNING ' + Date.now());
+setTimeout(function() {
+    console.log('\n.')
+}, 5000);
