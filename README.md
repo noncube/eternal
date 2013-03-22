@@ -21,6 +21,8 @@ Can be either absolute/relative path or a command found in $PATH
 Set to 0 for infinite restarts
 `Defaults to 10`
 
+**--key** - identifier to use for the service. This identifier will be used in logs and commands.
+
 #####Examples:
 
 Start a node app that will restart forever:  
@@ -28,6 +30,30 @@ Start a node app that will restart forever:
 
 Start a ruby script:  
 `eternal start script.rb -e ruby`
+
+Start a script with an identifier:
+`eternal start script.js --key stage_app`
+
+####stop \[file\]
+
+Stop a script. Usage: `eternal stop thing.js`
+
+If a key was specified in `eternal start` command, it should be used instead of filename.
+
+#####Examples:
+
+`eternal stop app.js`
+
+`eternal stop stage_app`
+
+
+####stopall
+
+Stop all eternal services \[for current user\].
+
+#####Examples:
+
+`eternal stopall`
 
 
 #TODO:
@@ -37,15 +63,6 @@ show the list of running things:
 
 eternal list
 
-Stop all running things:
-------------------------
-
-eternal stopall
-
-stop this thing:
-----------------
-
-eternal stop thing.js
 
 restart all of the things
 -------------------------
