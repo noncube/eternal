@@ -4,6 +4,11 @@ run things to eternity. It shouldn't matter what those runnable things happen to
 
 This is a list of what the thing will do, not necessarily what it does currently.
 
+##Options
+
+**--help, -h** - show help
+**--version, -v** - show version
+**--debug, -d** - show verbose debugging output
 
 ##Commands:
 
@@ -17,7 +22,7 @@ Start a script. Usage: `eternal start thing.js`
 Can be either absolute/relative path or a command found in $PATH
 `Defaults to node`
 
-**--max, -n** - specify max number of restarts.  
+**--max, -m** - specify max number of restarts.
 Set to 0 for infinite restarts
 `Defaults to 10`
 
@@ -78,5 +83,8 @@ Commands:
 Options:
 * log file name
 * --watch: watch files for changes and restart, with options as to which files are watched
+
+Implementation:
+* on restart or stop, make sure process actually exits - SIGTERM, add timeout for SIGKILL. on('exit') resume
 
 basic tests
