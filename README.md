@@ -2,8 +2,6 @@
 
 run things to eternity. It shouldn't matter what those runnable things happen to be.
 
-This is a list of what the thing will do, not necessarily what it does currently.
-
 ##Options
 
 **--help, -h** - show help  
@@ -74,17 +72,19 @@ If a key was specified in `eternal start` command, it should be used instead of 
 
 Restart all currently monitored services. Usage: `eternal restartall`
 
+####list
+
+List all currently monitored services. Usage: `eternal list`
 
 #TODO v0.1:
-
-Commands:
-* list
 
 Options:
 * log file name
 * --watch: watch files for changes and restart, with options as to which files are watched
+* list --json: return JSON data instead of prettyprinted
 
 Implementation:
 * on restart or stop, make sure process actually exits - SIGTERM, add timeout for SIGKILL. on('exit') resume
+* list: pretty print relevant data
 
 basic tests
