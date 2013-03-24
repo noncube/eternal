@@ -6,9 +6,9 @@ This is a list of what the thing will do, not necessarily what it does currently
 
 ##Options
 
-**--help, -h** - show help
-**--version, -v** - show version
-**--debug, -d** - show verbose debugging output
+**--help, -h** - show help  
+**--version, -v** - show version  
+**--debug, -d** - show verbose debugging output  
 
 ##Commands:
 
@@ -19,11 +19,11 @@ Start a script. Usage: `eternal start thing.js`
 #####Options
 
 **--exec, -e** - specify an executable.  
-Can be either absolute/relative path or a command found in $PATH
+Can be either absolute/relative path or a command found in $PATH  
 `Defaults to node`
 
 **--max, -m** - specify max number of restarts.
-Set to 0 for infinite restarts
+Set to 0 for infinite restarts  
 `Defaults to 10`
 
 **--key** - identifier to use for the service. This identifier will be used in logs and commands.
@@ -36,7 +36,7 @@ Start a node app that will restart forever:
 Start a ruby script:  
 `eternal start script.rb -e ruby`
 
-Start a script with an identifier:
+Start a script with an identifier:  
 `eternal start script.js --key stage_app`
 
 ####stop \[file\]
