@@ -76,15 +76,17 @@ Restart all currently monitored services. Usage: `eternal restartall`
 
 List all currently monitored services. Usage: `eternal list`
 
+#####Options
+
+**--json** - output JSON instead of pretty-printing
+
 #TODO v0.1:
+
+output modes -- pretty print, JSON
+
+basic tests
 
 Options:
 * log file name
+* --color, --nocolor - for better pretty-printing
 * --watch: watch files for changes and restart, with options as to which files are watched
-* list --json: return JSON data instead of prettyprinted
-
-Implementation:
-* on restart or stop, make sure process actually exits - SIGTERM, add timeout for SIGKILL. on('exit') resume
-* list: pretty print relevant data
-
-basic tests
