@@ -49,32 +49,34 @@ If a key was specified in `eternal start` command, it should be used instead of 
 
 ####stopall
 
-Stop all eternal services \[for current user\].
+Stop all eternal services \[for current user\]. Usage: `eternal stopall`
+
+
+####restart \[file\]
+
+Restart a script. Usage: `eternal restart thing.js`
+
+If a key was specified in `eternal start` command, it should be used instead of filename.
 
 #####Examples:
 
-`eternal stopall`
+`eternal restart app.js`
+
+`eternal restart stage_app`
 
 
-#TODO:
+####restartall
 
-show the list of running things:
---------------------------------
-
-eternal list
+Restart all currently monitored services. Usage: `eternal restartall`
 
 
-restart all of the things
--------------------------
+#TODO v0.1:
 
-eternal restartall
+Commands:
+* list
 
-restart this thing
-------------------
+Options:
+* log file name
+* --watch: watch files for changes and restart, with options as to which files are watched
 
-eternal restart thing
-
-args:
------
-
-more to come.
+basic tests
