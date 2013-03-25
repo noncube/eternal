@@ -2,6 +2,10 @@
 
 run things to eternity. It shouldn't matter what those runnable things happen to be.
 
+##Installation
+
+    $ [sudo] npm install eternal -g
+
 ##Options
 
 **--help, -h** - show help  
@@ -25,7 +29,7 @@ Can be either absolute/relative path or a command found in $PATH
 
 **--max, -m** - specify max number of restarts.
 Set to 0 for infinite restarts  
-`Defaults to 10`
+`Defaults to 0`
 
 **--log** - Explicit path to logfile for this service's stdout/stderr. Defaults to ~/.eternal/<KEY>.log
 
@@ -93,4 +97,5 @@ basic tests
 
 Options:
 * --color, --nocolor - for better pretty-printing
+
 * --watch: watch files for changes and restart, with options as to which files are watched
