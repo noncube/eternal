@@ -1,27 +1,38 @@
 {
-  "name": "eternal",
-  "version": "0.0.1",
-  "description": "Keep long-running node processes.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "",
-  "author": {
-    "name": "Mostly Serious",
-    "email": "info@mostlyserious.io"
-  },
-  "maintainers": [
-    {
-      "name": "devoidfury",
-      "email": "tom@mostlyserious.io"
-    }
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "node-watch": "0.3.0",
-    "nomnom": "1.6.0",
-    "async": "~0.2.6",
-    "asciitable": "0.0.6"
-  }
+    "name": "eternal",
+    "version": "0.0.1a",
+
+    "description": "Monitor and restart long-running node processes.",
+    "bin": {
+        "eternal": "./bin/eternal"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/angrymilliner/eternal.git"
+    },
+    "author": {
+        "name": "Mostly Serious",
+        "email": "info@mostlyserious.io"
+    },
+    "maintainers": [
+        {
+            "name": "devoidfury",
+            "email": "tom@mostlyserious.io"
+        }
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "readmeFilename": "README.md",
+    "license": "MIT",
+    "dependencies": {
+        "node-watch": "0.3.0",
+        "nomnom": "1.6.0",
+        "async": "0.2.6",
+        "asciitable": "0.0.6"
+    },
+    "devDependencies": {}
 }

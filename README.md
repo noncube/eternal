@@ -85,7 +85,7 @@ List all currently monitored services. Usage: `eternal list`
 
 **--json** - output JSON instead of pretty-printing
 
-#TODO v0.1:
+#TODO v0.1.0:
 
 output modes -- pretty print, JSON
 
