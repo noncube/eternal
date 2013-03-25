@@ -7,6 +7,11 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+
+    "bin": {
+        "eternal": "./bin/eternal"
+    },
+
     "repository": {
         "type": "git",
         "url": "http://github.com/angrymilliner/eternal.git"
