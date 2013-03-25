@@ -14,6 +14,9 @@ run things to eternity. It shouldn't matter what those runnable things happen to
 
 Start a script. Usage: `eternal start thing.js`
 
+If a service is already running with the same key (or filename without a key specified), the running service will be stopped and the new one started.
+
+
 #####Options
 
 **--exec, -e** - specify an executable.  
@@ -24,7 +27,9 @@ Can be either absolute/relative path or a command found in $PATH
 Set to 0 for infinite restarts  
 `Defaults to 10`
 
-**--key** - identifier to use for the service. This identifier will be used in logs and commands.
+**--log** - Explicit path to logfile for this service's stdout/stderr. Defaults to ~/.eternal/<KEY>.log
+
+**--key** - identifier to use for the service. This identifier will be used in logs and commands. (recommended)
 
 #####Examples:
 
@@ -87,6 +92,5 @@ output modes -- pretty print, JSON
 basic tests
 
 Options:
-* log file name
 * --color, --nocolor - for better pretty-printing
 * --watch: watch files for changes and restart, with options as to which files are watched

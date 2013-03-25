@@ -21,6 +21,7 @@
   "dependencies": {
     "node-watch": "0.3.0",
     "nomnom": "1.6.0",
-    "async": "~0.2.6"
+    "async": "~0.2.6",
+    "asciitable": "0.0.6"
   }
 }
